@@ -32,9 +32,9 @@ Resulting multimodal network consists of three parts:
 During training, only top layers of VGG16 were unfrozen.
 
 # **Repository structure**
-1. Notebook "Multimodal_network" - notebook with dataloaders, train-test loops and implemented in pytorch multimodal network
-2. Notebook "Separated_networks" - notebook with dataloaders, train-test loops and implemented in pytorch parts of multimodal network
-3. Notebook "Augmentation" - notebook to augment Images and Eye-tracking data at once. We didn't have time to train with augmentations, but it works!
+1. Notebook `Multimodal_network` - notebook with dataloaders, train-test loops and implemented in pytorch multimodal network
+2. Notebook `Separated_networks` - notebook with dataloaders, train-test loops and implemented in pytorch parts of multimodal network
+3. Notebook `Augmentation` - notebook to augment Images and Eye-tracking data at once. We didn't have time to train with augmentations, but it works!
 
 # **How to Use**
 1. Download data [here](https://drive.google.com/drive/folders/13PBjyQtvs1utcz7AYh7pn1dX7-7vFCRM?usp=sharing). 
