@@ -9,6 +9,7 @@ During 5 seconds of Image presentation the following data were collected:
 2. The pupillometry data - sizes of the pupils
 3. Galvanic Skin Response (GSR)
 4. Heart Rate (HR)
+Note, classes of target variables - arousal (1-7) and valence (1-7) - are highly imbalanced and correlated.
 
 ## **Project presentation**
 #### [Final project presentation](xxx)
@@ -19,7 +20,8 @@ X and Y coordinates of eye-tracking data may be naturally represented as an imag
 Proceedings of the 2020 International Conference on Multimodal Interaction. doi:10.1145/3382507.3418828.
 
 # **Implemented tricks for training procedure**
-1. Focal loss
+1. Focal loss (gamma=3) - we saw this problem as classification problem not regression, and focal loss greatly improved performance. We also set balanced class weights into CrossEntropyLoss.
+2. Dataset balancibg - it's close to impossible to balance dataset for both arousal and valence classes, we aplied some heuristics to create subset of data with close uniform class distribution.
 
 # **Methods**
 Resulting multimodal network consists of three parts:
@@ -30,13 +32,14 @@ Resulting multimodal network consists of three parts:
 During training, only top layers of VGG16 were unfrozen.
 
 # **Repository structure**
-1. Notebook xxx
-2. Notebook xxx
+1. Notebook "Multimodal_network" - notebook with dataloaders, train-test loops and implemented in pytorch multimodal network
+2. Notebook "Separated_networks" - notebook with dataloaders, train-test loops and implemented in pytorch parts of multimodal network
+3. Notebook "Augmentation" - notebook to augment Images and Eye-tracking data at once. We didn't have time to train with augmentations, but it works!
 
 # **How to Use**
 1. Download data [here]()
 2. Unzip data at the same folder where notebooks are located
-3. Run notebooks
+3. Run notebooks. Each notebook may be treated separately.
 
 # **Conclusions**
 (some accuracy percentages and tables)
