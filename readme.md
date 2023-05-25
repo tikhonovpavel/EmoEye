@@ -25,3 +25,24 @@ Resulting multimodal network consists of three parts:
 3. VGG16 to analyze Images (visual stimuli)
 
 During training, only top layers of VGG16 were unfrozen.
+
+#**Repository structure**
+1. Notebook xxx
+2. Notebook xxx
+
+#**How to Use**
+1. Download data [here]()
+2. Unzip data at the same folder where notebooks are located
+3. Run notebooks
+
+#**Conclusions**
+(some accuracy percentages and tables)
+
+# **Prerequisites**
+...
+
+#**EmoEye Team**
+...
+
+# **Thanks!**
+<img src="Docs/Мем(очень смешной(нет)).jpg" alt="Meme" width="800">
