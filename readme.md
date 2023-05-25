@@ -46,11 +46,11 @@ From [this](https://ieeexplore.ieee.org/document/9337074/) review[^2], we found 
 [^2]: Gill, R., & Singh, J. (2020). A Review of Neuromarketing Techniques and Emotion Analysis Classifiers for Visual-Emotion Mining. 2020 9th International Conference System Modeling and Advancement in Research Trends (SMART). doi:10.1109/SMART50582.2020.9337074
 
 # **EmoEye Team**
-*Pavel Tikhonov - data augmentation techniques, transformer testing
-*Ivan Kudryakov - hyperparameters search
-*Marina Morozova - dataset preparation, general idea of architecture
-*Marco Offidani - presentation, finalization of the report
-*Ziang Guo - hyperparameters search, testing modules separately
+* Pavel Tikhonov - data augmentation techniques, transformer testing
+* Ivan Kudryakov - hyperparameters search
+* Marina Morozova - dataset preparation, general idea of architecture
+* Marco Offidani - presentation, finalization of the report
+* Ziang Guo - hyperparameters search, testing modules separately
 
 # **Thanks!**
 <img src="Figs/Мем(очень смешной(нет)).jpg" alt="Meme" width="800">
