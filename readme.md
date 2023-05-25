@@ -42,8 +42,9 @@ During training, only top layers of VGG16 were unfrozen.
 4. Run notebooks. Each notebook may be treated separately.
 
 # **Data Structure**
-Data contains `prep_data\epochs` folder with 5-seconds csv files and `Images` folder with visual stimuli. 
+Data contains `prep_data\epochs` folder with 5-seconds csv files and `Images` folder with visual stimuli:
 * In `prep_data\epochs` in each folder (`0`, `1`, `2`, … etc.) there are csv files corresponding to eye-trackings and biometric data from a participant. For example, `0_dog 7_4_6.csv` is a response to the first picture in the session, `dog 7.jpg`, and participant reported `4` on arousal and `6` on valence scales.
+In `csv` files there are following columns:
 * `TIME` - time in sec from the beginning of the recording 
 * `FPOGX`, `FPOGY` - Fixation Point-Of-Gaze (X, Y coordinates, from 0 to 1 with outliers if person looks outside of the screen) 
 * `FPOGID` - index of the fixation point 
