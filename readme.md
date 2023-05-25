@@ -22,6 +22,7 @@ Proceedings of the 2020 International Conference on Multimodal Interaction. doi:
 # **Implemented tricks for training procedure**
 1. Focal loss (gamma=3) - we saw this problem as classification problem not regression, and focal loss greatly improved performance. We also set balanced class weights into CrossEntropyLoss.
 2. Dataset balancibg - it's close to impossible to balance dataset for both arousal and valence classes, we aplied some heuristics to create subset of data with close uniform class distribution.
+3. Train-test split - we suspected some overfitting from VGG16 so for testing we used set of 100 Images that network didn't see completely during training and all 5-seconds reactions to them.
 
 # **Methods**
 Resulting multimodal network consists of three parts:
