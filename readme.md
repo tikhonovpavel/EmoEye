@@ -1,5 +1,5 @@
 # **EmoEye team Final Project page for Deep Learning course**
-This repository contains the code for the final project course on deep learning, which aims to build a multimodal architecture for emotion prediction problem. The goal of this project is to build and fine-tune multimodal neural network for prediction of Emotions based on Eye-Tracking and biometric data. The dataset itself is private, but preprocessed data will be available for some time [here](xxx).
+This repository contains the code for the final project course on deep learning, which aims to build a multimodal architecture for emotion prediction problem. The goal of this project is to build and fine-tune multimodal neural network for prediction of Emotions based on Eye-Tracking and biometric data. The dataset itself is private, but preprocessed data will be available for some time [here](https://drive.google.com/drive/folders/13PBjyQtvs1utcz7AYh7pn1dX7-7vFCRM?usp=sharing).
 
 # **Dataset**
 We used private dataset containing 29,153 5-second reactions from 160 participants to 799 Images. Images are very diverse and contain scenes, people, animals, etc.
@@ -37,7 +37,7 @@ During training, only top layers of VGG16 were unfrozen.
 3. Notebook "Augmentation" - notebook to augment Images and Eye-tracking data at once. We didn't have time to train with augmentations, but it works!
 
 # **How to Use**
-1. Download data [here]()
+1. Download data [here](https://drive.google.com/drive/folders/13PBjyQtvs1utcz7AYh7pn1dX7-7vFCRM?usp=sharing). Data contains `prep_data\epochs` folder with 5-seconds csv files and `Images` folder with visual stimuli. 
 2. Unzip data at the same folder where notebooks are located
 3. Run notebooks. Each notebook may be treated separately.
 
