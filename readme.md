@@ -43,19 +43,19 @@ During training, only top layers of VGG16 were unfrozen.
 
 # **Data Structure**
 Data contains `prep_data\epochs` folder with 5-seconds csv files and `Images` folder with visual stimuli. 
-* In `prep_data\epochs` in each folder (`0`, `1`, `2`, … etc.) there are csv files corresponding to eye-trackings and biometric data For example, `0_dog 7_4_6.csv` is a response to the first picture in the session, `dog 7.jpg`, participant reported 4 on arousal and 6 on valence scales.
+* In `prep_data\epochs` in each folder (`0`, `1`, `2`, … etc.) there are csv files corresponding to eye-trackings and biometric data from a participant. For example, `0_dog 7_4_6.csv` is a response to the first picture in the session, `dog 7.jpg`, and participant reported `4` on arousal and `6` on valence scales.
 * `TIME` - time in sec from the beginning of the recording 
-* FPOGX, FPOGY - Fixation Point-Of-Gaze (X, Y coordinates, from 0 to 1 with outliers if person looks outside of the screen) 
-* FPOGID - index of the fixation point 
-* FPOGV - is FPOG valid? In times at which eyes were not detected - this column has zeros 
-* LPMM, RPMM - left and right eye pupil diameter in millimeters 
-* LPMMV, RPMMV - is LPMM/RPMM valid? 
-* GSR - Galvanic Skin Response 
-* GSRV - is GSR valid? 
-* HR - Heart Rate (BMP) 
-* HRV - is HR valid? 
-* Image - image shown 
-* Arousal, Valence - response of the participants
+* `FPOGX`, `FPOGY` - Fixation Point-Of-Gaze (X, Y coordinates, from 0 to 1 with outliers if person looks outside of the screen) 
+* `FPOGID` - index of the fixation point 
+* `FPOGV` - is `FPOG` valid? In times at which eyes were not detected - this column has zeros 
+* `LPMM`, `RPMM` - left and right eye pupil diameter in millimeters 
+* `LPMMV`, `RPMMV` - is `LPMM`/`RPMM` valid? 
+* `GSR` - Galvanic Skin Response 
+* `GSRV` - is GSR valid? 
+* `HR` - Heart Rate (BMP) 
+* `HRV` - is `HR` valid? 
+* `Image` - image shown 
+* `Arousal`, `Valence` - response of the participants
 
 # **Conclusions**
 From [this](https://ieeexplore.ieee.org/document/9337074/) review[^2], we found that usually people classify 3 classes of emotions (negative, neutral, positive) and get accuracy in 53-88% range. We used more classes (7) and classified on two scales (arousal-valence) at once and got comparable accuracy. Our private dataset is very raw and we are the first people who analyzed this data and created ML/DL model with it, and we didn't know what to expect at all. With our models we proved that this dataset contains some meaningful data and may be used for future investigations.
