@@ -15,7 +15,7 @@ Note, classes of target variables - arousal (1-7) and valence (1-7) - are highly
 #### [Final project presentation](https://docs.google.com/presentation/d/1gR8r-b8pp3k-3rXXY29RrGX3uN2F91EH/edit?usp=sharing&ouid=104806623978954596637&rtpof=true&sd=true)
 
 # **General Project Goals**
-X and Y coordinates of eye-tracking data may be naturally represented as an image of scanpath (Fig. 1) that may be analyzed via Convolutional Neural Network (CNN). At the same time we still have some additional time-series biometric data (pupil size, GSR, HR) that may be analyzed via Recurrent Neural Network (RNN). So, a natual idea is to implement CNN and RNN at once in multimodal neural network by concatenatination of CNN and RNN outputs (this approach is described in [this](https://dl.acm.org/doi/10.1145/3382507.3418828) article[^1]). We implemented this approach on our private dataset and improved it by adding extra module processing the Image shown to the participant.
+X and Y coordinates of eye-tracking data may be naturally represented as an image of scanpath that may be analyzed via Convolutional Neural Network (CNN). At the same time we still have some additional time-series biometric data (pupil size, GSR, HR) that may be analyzed via Recurrent Neural Network (RNN). So, a natual idea is to implement CNN and RNN at once in multimodal neural network by concatenatination of CNN and RNN outputs (this approach is described in [this](https://dl.acm.org/doi/10.1145/3382507.3418828) article[^1]). We implemented this approach on our private dataset and improved it by adding extra module processing the Image shown to the participant.
 [^1]: Sims, S. D., & Conati, C. (2020). A Neural Architecture for Detecting User Confusion in Eye-tracking Data. 
 Proceedings of the 2020 International Conference on Multimodal Interaction. doi:10.1145/3382507.3418828.
 
@@ -37,9 +37,8 @@ During training, only top layers of VGG16 were unfrozen.
 3. Notebook `Augmentation` - notebook to augment Images and Eye-tracking data at once. We didn't have time to train with augmentations, but it works!
 
 # **How to Use**
-1. Download data [here](https://drive.google.com/drive/folders/13PBjyQtvs1utcz7AYh7pn1dX7-7vFCRM?usp=sharing). 
-3. Unzip data at the same folder where notebooks are located
-4. Run notebooks. Each notebook may be treated separately.
+1. Download data [here](https://drive.google.com/drive/folders/13PBjyQtvs1utcz7AYh7pn1dX7-7vFCRM?usp=sharing)
+4. Run notebooks. Each notebook may be treated separately
 
 # **Data Structure**
 Data contains `prep_data\epochs` folder with 5-seconds csv files and `Images` folder with visual stimuli:
@@ -57,6 +56,12 @@ In `csv` files there are following columns:
 * `HRV` - is `HR` valid? 
 * `Image` - image shown 
 * `Arousal`, `Valence` - response of the participants
+
+# **Results**
+Using multimodal upproach we got average accuracy on the test set equal to 61% on arousal and 48% on valence scales with very reasonable confusion matrices.
+
+
+Each separate module of the multimodal architecture performed worse with VGG16 having the lowest accuracies. 
 
 # **Conclusions**
 From [this](https://ieeexplore.ieee.org/document/9337074/) review[^2], we found that usually people classify 3 classes of emotions (negative, neutral, positive) and get accuracy in 53-88% range. We used more classes (7) and classified on two scales (arousal-valence) at once and got comparable accuracy. Our private dataset is very raw and we are the first people who analyzed this data and created ML/DL model with it, and we didn't know what to expect at all. With our models we proved that this dataset contains some meaningful data and may be used for future investigations.
