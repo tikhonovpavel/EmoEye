@@ -26,23 +26,23 @@ Resulting multimodal network consists of three parts:
 
 During training, only top layers of VGG16 were unfrozen.
 
-#**Repository structure**
+# **Repository structure**
 1. Notebook xxx
 2. Notebook xxx
 
-#**How to Use**
+# **How to Use**
 1. Download data [here]()
 2. Unzip data at the same folder where notebooks are located
 3. Run notebooks
 
-#**Conclusions**
+# **Conclusions**
 (some accuracy percentages and tables)
 
-#**Prerequisites**
+# **Prerequisites**
 ...
 
-#**EmoEye Team**
+# **EmoEye Team**
 ...
 
-#**Thanks!**
+# **Thanks!**
 <img src="Docs/Мем(очень смешной(нет)).jpg" alt="Meme" width="800">
