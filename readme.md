@@ -1,4 +1,4 @@
-# **EmoEye team Final Project page for Deep Learning**
+# **EmoEye team Final Project page for Deep Learning course**
 This repository contains the code for the final project course on deep learning, which aims to build a multimodal architecture for emotion prediction problem. The goal of this project is to build and fine-tune multimodal neural network for prediction of Emotions based on Eye-Tracking and biometric data. The dataset itself is private, but preprocessed data will be available for some time [here](xxx).
 
 # **Dataset**
@@ -17,6 +17,9 @@ During 5 seconds of Image presentation the following data were collected:
 X and Y coordinates of eye-tracking data may be naturally represented as an image of scanpath (Fig. 1) that may be analyzed via Convolutional Neural Network (CNN). At the same time we still have some additional time-series biometric data (pupil size, GSR, HR) that may be analyzed via Recurrent Neural Network (RNN). So, a natual idea is to implement CNN and RNN at once in multimodal neural network by concatenatination of CNN and RNN outputs (this approach is described in [this](https://dl.acm.org/doi/10.1145/3382507.3418828) article[^1]). We implemented this approach on our private dataset and improved it by adding extra module processing the Image shown to the participant.
 [^1]: Sims, S. D., & Conati, C. (2020). A Neural Architecture for Detecting User Confusion in Eye-tracking Data. 
 Proceedings of the 2020 International Conference on Multimodal Interaction. doi:10.1145/3382507.3418828.
+
+# **Implemented tricks for training procedure**
+1. Focal loss
 
 # **Methods**
 Resulting multimodal network consists of three parts:
