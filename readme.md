@@ -38,11 +38,11 @@ During training, only top layers of VGG16 were unfrozen.
 #**Conclusions**
 (some accuracy percentages and tables)
 
-# **Prerequisites**
+#**Prerequisites**
 ...
 
 #**EmoEye Team**
 ...
 
-# **Thanks!**
+#**Thanks!**
 <img src="Docs/Мем(очень смешной(нет)).jpg" alt="Meme" width="800">
