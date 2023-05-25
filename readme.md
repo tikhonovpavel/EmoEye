@@ -42,13 +42,15 @@ During training, only top layers of VGG16 were unfrozen.
 3. Run notebooks. Each notebook may be treated separately.
 
 # **Conclusions**
-(some accuracy percentages and tables)
-
-# **Prerequisites**
-...
+From [this](https://ieeexplore.ieee.org/document/9337074/) review[^2], we found that usually people classify 3 classes of emotions (negative, neutral, positive) and get accuracy in 53-88% range. We used more classes (7) and classified on two scales (arousal-valence) at once and got comparable accuracy. Our private dataset is very raw and we are the first people who analyzed this data and created ML/DL model with it, and we didn't know what to expect at all. With our models we proved that this dataset contains some meaningful data and may be used for future investigations.
+[^2]: Gill, R., & Singh, J. (2020). A Review of Neuromarketing Techniques and Emotion Analysis Classifiers for Visual-Emotion Mining. 2020 9th International Conference System Modeling and Advancement in Research Trends (SMART). doi:10.1109/SMART50582.2020.9337074
 
 # **EmoEye Team**
-...
+*Pavel Tikhonov - data augmentation techniques, transformer testing
+*Ivan Kudryakov - hyperparameters search
+*Marina Morozova - dataset preparation, general idea of architecture
+*Marco Offidani - presentation, finalization of the report
+*Ziang Guo - hyperparameters search, testing modules separately
 
 # **Thanks!**
-<img src="Docs/Мем(очень смешной(нет)).jpg" alt="Meme" width="800">
+<img src="Figs/Мем(очень смешной(нет)).jpg" alt="Meme" width="800">
