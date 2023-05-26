@@ -44,16 +44,12 @@ We experimented a lot with hyperparameters of the network (types and numbers of 
 
 <img src="Figs/cnn.png" alt="alt" width="500">
 
-3. VGG16 to analyze Images (visual stimuli)
+3. VGG16 to analyze Images (visual stimuli). During training, only top layers of VGG16 were unfrozen.
 
 
-#**Overview of architecture**
-
+# **Overview of architecture**
 
 <img src="Figs/over.png" alt="alt" width="800">
-
-
-During training, only top layers of VGG16 were unfrozen.
 
 # **Repository structure**
 1. [Notebook](https://github.com/tikhonovpavel/EmoEye/blob/main/multimodal_network.ipynb) `multimodal_network` - notebook with dataloaders, train-test loops and implemented in pytorch multimodal network
