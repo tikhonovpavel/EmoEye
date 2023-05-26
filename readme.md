@@ -20,7 +20,7 @@ Note, classes of target variables - arousal (1-7) and valence (1-7) - are highly
 <img src="Figs/ar-val-vals.png" alt="alt" width="800">
 
 ## **Project presentation**
-#### [Final project presentation](https://docs.google.com/presentation/d/1gR8r-b8pp3k-3rXXY29RrGX3uN2F91EH/edit?usp=sharing&ouid=104806623978954596637&rtpof=true&sd=true)
+#### [Final project presentation](https://github.com/tikhonovpavel/EmoEye/blob/main/EmoEye.pdf)
 
 # **General Project Goals**
 X and Y coordinates of eye-tracking data may be naturally represented as an image of scanpath that may be analyzed via Convolutional Neural Network (CNN). At the same time we still have some additional time-series biometric data (pupil size, GSR, HR) that may be analyzed via Recurrent Neural Network (RNN). So, a natual idea is to implement CNN and RNN at once in multimodal neural network by concatenatination of CNN and RNN outputs (this approach is described in [this](https://dl.acm.org/doi/10.1145/3382507.3418828) article[^1]). We implemented this approach on our private dataset and improved it by adding extra module processing the Image shown to the participant.
@@ -44,7 +44,14 @@ We experimented a lot with hyperparameters of the network (types and numbers of 
 
 <img src="Figs/cnn.png" alt="alt" width="500">
 
-5. VGG16 to analyze Images (visual stimuli)
+3. VGG16 to analyze Images (visual stimuli)
+
+
+**Overview of architecture**
+
+
+<img src="Figs/over.png" alt="alt" width="800">
+
 
 During training, only top layers of VGG16 were unfrozen.
 
