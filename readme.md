@@ -78,10 +78,13 @@ In `csv` files there are following columns:
 * `Arousal`, `Valence` - response of the participants
 
 # **Results**
-Using multimodal upproach we got average accuracy on the test set equal to 61% on arousal and 48% on valence scales with very reasonable confusion matrices.
+Using multimodal upproach we got average accuracy on the test set equal to 58.4% on arousal and 37.3% on valence scales with very reasonable confusion matrices.
 
+<img src="Figs/multi_acc.png" alt="alt" width="800">
 
 Each separate module of the multimodal architecture performed worse with VGG16 having the lowest accuracies. 
+
+<img src="Figs/sep_acc.png" alt="alt" width="800">
 
 # **Conclusions**
 From [this](https://ieeexplore.ieee.org/document/9337074/) review[^2], we found that usually people classify 3 classes of emotions (negative, neutral, positive) and get accuracy in 53-88% range. We used more classes (7) and classified on two scales (arousal-valence) at once and got comparable accuracy. Our private dataset is very raw and we are the first people who analyzed this data and created ML/DL model with it, and we didn't know what to expect at all. With our models we proved that this dataset contains some meaningful data and may be used for future investigations.
