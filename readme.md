@@ -4,12 +4,17 @@ This repository contains the code for the final project course on deep learning,
 # **Dataset**
 We used private dataset containing 29,153 5-second reactions from 160 participants to 799 Images. Images are very diverse and contain scenes, people, animals, etc.
 After 5 seconds of Image presentation, participants reported the percieved emotion on Arousal (from 1 to 7, from boring to exciting) and Valence (from 1 to 7, from negative to positive) scales.
+
+<img src="Figs/arousal-valence.png" alt="alt" width="400">
+
 During 5 seconds of Image presentation the following data were collected:
 1. The eye-tracking data - X, Y coordinates on the picture at which participant was looking at
 2. The pupillometry data - sizes of the pupils
 3. Galvanic Skin Response (GSR)
 4. Heart Rate (HR)
+
 Note, classes of target variables - arousal (1-7) and valence (1-7) - are highly imbalanced and correlated.
+
 
 ## **Project presentation**
 #### [Final project presentation](https://docs.google.com/presentation/d/1gR8r-b8pp3k-3rXXY29RrGX3uN2F91EH/edit?usp=sharing&ouid=104806623978954596637&rtpof=true&sd=true)
