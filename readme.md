@@ -35,7 +35,7 @@ Proceedings of the 2020 International Conference on Multimodal Interaction. doi:
 3. Train-test split - we suspected some overfitting from VGG16 so for testing we used set of 100 Images that network didn't see completely during training and all 5-seconds reactions to them.
 
 # **Methods**
-We experimented a lot with hyperparameters of the network (types and numbers of layers, number of neurons in the layers, etc.) Resulting multimodal network consists of three parts:
+We experimented a lot with hyperparameters of the network (types and numbers of layers, number of neurons in layers, etc.) Resulting multimodal network consists of three parts:
 1. CNN-LSTM to analyze time series data (X, Y, pupil size, GSR, HR)
 
 <img src="Figs/cnn_lstm.png" alt="alt" width="500">
