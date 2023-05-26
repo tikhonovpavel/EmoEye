@@ -38,11 +38,11 @@ Proceedings of the 2020 International Conference on Multimodal Interaction. doi:
 We experimented a lot with hyperparameters of the network (types and numbers of layers, number of neurons in the layers, etc.) Resulting multimodal network consists of three parts:
 1. CNN-LSTM to analyze time series data (X, Y, pupil size, GSR, HR)
 
-<img src="Figs/cnn_lstm.png" alt="alt" width="300">
+<img src="Figs/cnn_lstm.png" alt="alt" width="500">
 
 3. CNN to analyze scanpaths
 
-<img src="Figs/cnn.png" alt="alt" width="300">
+<img src="Figs/cnn.png" alt="alt" width="500">
 
 5. VGG16 to analyze Images (visual stimuli)
 
