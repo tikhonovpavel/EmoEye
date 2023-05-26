@@ -76,4 +76,4 @@ From [this](https://ieeexplore.ieee.org/document/9337074/) review[^2], we found 
 * Ziang Guo - hyperparameters search, testing modules separately
 
 # **Thanks!**
-<img src="Figs/Мем(очень смешной(нет)).jpg" alt="Meme" width="800">
+<img src="https://github.com/utoprey/CogniNet/blob/main/Docs/%D0%9C%D0%B5%D0%BC(%D0%BE%D1%87%D0%B5%D0%BD%D1%8C%20%D1%81%D0%BC%D0%B5%D1%88%D0%BD%D0%BE%D0%B9(%D0%BD%D0%B5%D1%82)).jpg" alt="Meme" width="800">
