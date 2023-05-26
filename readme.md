@@ -36,9 +36,9 @@ Proceedings of the 2020 International Conference on Multimodal Interaction. doi:
 
 # **Methods**
 We experimented a lot with hyperparameters of the network (types and numbers of layers, number of neurons in the layers, etc.) Resulting multimodal network consists of three parts:
-1. CNN-LSTM to analyze time seies data (X, Y, pupil size, GSR, HR)
-2. CNN to analyze scanpaths
-3. VGG16 to analyze Images (visual stimuli)
+1. CNN-LSTM to analyze time series data (X, Y, pupil size, GSR, HR)
+3. CNN to analyze scanpaths
+4. VGG16 to analyze Images (visual stimuli)
 
 During training, only top layers of VGG16 were unfrozen.
 
