@@ -18,7 +18,7 @@ During 5 seconds of Image presentation the following data were collected:
 
 <img src="Figs/Screenshot 2023-05-26 030552.png" alt="alt" width="600">
 
-Note, classes of target variables - arousal (1-7) and valence (1-7) - are highly imbalanced and correlated.
+Note, classes of target variables - arousal (1-7) and valence (1-7) - are highly imbalanced and not independent.
 
 <img src="Figs/ar-val-vals.png" alt="alt" width="800">
 
