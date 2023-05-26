@@ -10,8 +10,10 @@ After 5 seconds of Image presentation, participants reported the percieved emoti
 During 5 seconds of Image presentation the following data were collected:
 1. The eye-tracking data - X, Y coordinates on the picture at which participant was looking at
 2. The pupillometry data - sizes of the pupils
-3. Galvanic Skin Response (GSR)
-4. Heart Rate (HR)
+3. Heart Rate (HR)
+4. Galvanic Skin Response (GSR)
+
+<img src="Figs/Screenshot 2023-05-26 030552.png" alt="alt" width="600">
 
 Note, classes of target variables - arousal (1-7) and valence (1-7) - are highly imbalanced and correlated.
 
