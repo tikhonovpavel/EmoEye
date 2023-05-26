@@ -5,7 +5,7 @@ This repository contains the code for the final project course on deep learning,
 We used private dataset containing 29,153 5-second reactions from 160 participants to 799 Images. Images are very diverse and contain scenes, people, animals, etc.
 After 5 seconds of Image presentation, participants reported the percieved emotion on Arousal (from 1 to 7, from boring to exciting) and Valence (from 1 to 7, from negative to positive) scales.
 
-<img src="Figs/arousal-valence.png" alt="alt" width="400">
+<img src="Figs/arousal-valence.png" alt="alt" width="300">
 
 During 5 seconds of Image presentation the following data were collected:
 1. The eye-tracking data - X, Y coordinates on the picture at which participant was looking at
@@ -26,6 +26,8 @@ Note, classes of target variables - arousal (1-7) and valence (1-7) - are highly
 X and Y coordinates of eye-tracking data may be naturally represented as an image of scanpath that may be analyzed via Convolutional Neural Network (CNN). At the same time we still have some additional time-series biometric data (pupil size, GSR, HR) that may be analyzed via Recurrent Neural Network (RNN). So, a natual idea is to implement CNN and RNN at once in multimodal neural network by concatenatination of CNN and RNN outputs (this approach is described in [this](https://dl.acm.org/doi/10.1145/3382507.3418828) article[^1]). We implemented this approach on our private dataset and improved it by adding extra module processing the Image shown to the participant.
 [^1]: Sims, S. D., & Conati, C. (2020). A Neural Architecture for Detecting User Confusion in Eye-tracking Data. 
 Proceedings of the 2020 International Conference on Multimodal Interaction. doi:10.1145/3382507.3418828.
+
+<img src="Figs/xy.png" alt="alt" width="400">
 
 # **Implemented tricks for training procedure**
 1. Focal loss (gamma=3) - we saw this problem as classification problem not regression, and focal loss greatly improved performance. We also set balanced class weights into CrossEntropyLoss.
